@@ -8,6 +8,7 @@ main {
 .global-header {
     background-image: url(/images/bg.jpg);
     background-size: cover;
+    padding-bottom:3em;
 }
 
 .header-text {
