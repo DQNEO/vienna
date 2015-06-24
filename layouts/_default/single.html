@@ -10,16 +10,18 @@
           {{ .Date.Format "Jan 2, 2006" }}
         </time>
       </div>
-      <div class="pull-right">
-        {{ range .Params.categories }}
-        <span class="post-tag small"><a href="{{ $baseurl }}/categories/{{ . | urlize }}">#{{ . }}</a></span>
-        {{ end }}
-      </div>
     </div>
   </header>
   <section>
     {{ .Content }}
   </section>
+      <div class="pull-left">
+        {{ range .Params.categories }}
+        <span class="post-tag small"><a href="{{ $baseurl }}/categories/{{ . | urlize }}">{{ . }}</a></span>
+        {{ end }}
+      </div>
+
+
   <footer>
     <section class="author-info row">
       <div class="author-avatar col-md-2">
