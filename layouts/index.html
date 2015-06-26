@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <div class="article-list">
-  {{ range $index, $page := .Site.Pages }}
+  {{ range first 850 .Site.Pages }}
   {{ .Render "li" }}
   {{ end }}
 </div>
